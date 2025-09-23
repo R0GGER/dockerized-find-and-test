@@ -1,0 +1,6 @@
+services:
+  dockerize-find-test:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: dockerize-find-test
