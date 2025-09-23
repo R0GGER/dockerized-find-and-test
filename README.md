@@ -6,20 +6,31 @@ It is based on the `findtest.sh` script from [R0GGER/public-iperf3-servers](http
 
 ### Prerequisites
 - [Docker](https://www.docker.com/get-started) must be installed and running.
+  
+  ```bash
+  bash <(wget -qO- https://get.docker.com)
+  ```
 
-### 1. Build and Start
-To build the Docker image and start the container in detached mode, run:
-```bash
-docker compose up --build -d
-```
+## How to Run
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/R0GGER/dockerized-find-and-test.git
+    cd dockerized-find-and-test
+    ```
+    
+2.  **Build and start the container:**
+    ```bash
+    docker compose up --build -d
+    ```
 
-### 2. Access the Application
-Open your browser and navigate to `http://localhost:8080`.
+3.  **Open the application:**
+    Navigate to [http://localhost:8080](http://localhost:8080) in your web browser.
 
-### Stop and remove
+## Stop and remove
 To stop and remove the container, run:
 ```bash
 docker compose down
 ```
+
 
 
