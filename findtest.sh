@@ -326,8 +326,8 @@ if [ -n "$NEAREST_SERVER_OBJ" ] && [ "$NEAREST_SERVER_OBJ" != "null" ]; then
     echo -e "\n${YELLOW}Top 3 closest iperf3-servers:${NC}"
     echo -e "${YELLOW}-----------------------------${NC}"
     jq -c --arg COUNTRY "$MY_COUNTRY" \
-       '.[] | select(.COUNTRY==$COUNTRY)' "$SERVER_JSON" | \
-    head -n 3 | while read -r server_info; do
+       '[.[] | select(.COUNTRY==$COUNTRY)][0:3] | .[]' "$SERVER_JSON" | \
+    while read -r server_info; do
         site=$(echo "$server_info" | jq -r '.SITE')
         country=$(echo "$server_info" | jq -r '.COUNTRY')
         host=$(echo "$server_info" | jq -r '.["IP/HOST"]')
