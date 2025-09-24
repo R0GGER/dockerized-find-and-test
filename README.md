@@ -1,6 +1,7 @@
 # iPERF3 SERVER LIST - DOCKERIZED FIND & TEST 
 
-This project packages the `findtest.sh` script into a Docker container, providing a simple web interface to find and test public iPerf3 servers.   
+This project packages the `findtest.sh` script into a Docker container, providing a simple web interface to find and test public iPerf3 servers.
+
 Screenshots: [1](https://github.com/R0GGER/dockerized-find-and-test/blob/main/screenshots/screenshot_1.png) [2](https://github.com/R0GGER/dockerized-find-and-test/blob/main/screenshots/screenshot_2.png)
 
 It is based on the `findtest.sh` script from [R0GGER/public-iperf3-servers](https://github.com/R0GGER/public-iperf3-servers/blob/main/findtest.sh).
@@ -32,6 +33,7 @@ To stop and remove the container, run:
 ```bash
 docker compose down
 ```
+
 
 
 
