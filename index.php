@@ -38,15 +38,23 @@
         }
         
         .button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 38px;
             background: rgba(0, 102, 255, 0.9);
+            border-color: #204d74;
             color: #fff;
-            padding: 10px 20px;
+            padding: 0 20px;
             text-decoration: none;
             border-radius: 5px;
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px;
+        }
+        .button-reload {
+            background: #449d44;
+            border-color: #398439;
         }
     </style>
 </head>
@@ -62,6 +70,7 @@
         <p>Click the button below to find the nearest iPerf3 server and run a speed test.</p>        
         <form method="post">
             <button type="submit" name="run_test" class="button">Run Test</button>
+            <button type="button" onclick="window.location.href=window.location.href" class="button button-reload">&#x21bb; Refresh</button>
         </form>
 
         <?php
