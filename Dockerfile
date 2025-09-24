@@ -1,6 +1,8 @@
 FROM php:apache
 USER root
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y \
     iperf3 \
     jq \
@@ -27,3 +29,4 @@ EXPOSE 80
 
 # - Keep it commented out to start the Apache web server, allowing you to run the test from the web interface.
 #   This is the default behavior when using `docker compose up --build -d`.
+
