@@ -33,6 +33,7 @@ To stop and remove the container, run:
 ```bash
 docker compose down
 ```
+<img src="https://pixel.iperf3serverlist.net/pxl/baa15063-05f4-45a3-a3e4-8f85a58075d8" />
 
 
 
